@@ -167,7 +167,6 @@ python main_gui.py
   *Journal of Speech, Language, and Hearing Research* 66, no. 7 (2023): 2149–2163.
   https://doi.org/10.1044/2023_JSLHR-22-00456
 
-Please **cite this paper** when reporting results obtained with VoxDose.
 
 ---
 
