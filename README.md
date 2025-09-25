@@ -6,7 +6,7 @@ The algorithms were **originally developed in MATLAB by Prof. Pasquale Bottalico
 
 ---
 
-## ✨ Features
+## Features
 
 - Computes per-frame **SPL (dBA)** and **F0 (Hz)** from **`.wav`** or **high-quality `.mp3`** recordings (WAV preferred).
 - Calibration using **one reference vowel recording** (subject + SLM/app measurement).
@@ -24,7 +24,7 @@ The algorithms were **originally developed in MATLAB by Prof. Pasquale Bottalico
 
 ---
 
-## 🖥️ System Requirements
+## System Requirements
 
 - Python 3.9+
 - Recommended OS: Windows 10/11 or macOS 13+
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎤 Hardware and Calibration
+## Hardware and Calibration
 
 To use VoxDose correctly, you need:
 
@@ -74,7 +74,7 @@ To use VoxDose correctly, you need:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Clone the repository:
 
@@ -91,7 +91,7 @@ python main_gui.py
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### 1) Monitor the Subject
 - Attach the microphone to the subject and connect it to the portable recorder.
@@ -133,7 +133,7 @@ python main_gui.py
 
 ---
 
-## 📊 Output Metrics
+## Output Metrics
 
 **Frame-level data (Excel)**
 - **Time (s)**
@@ -160,7 +160,7 @@ python main_gui.py
 
 ---
 
-## 📖 Reference
+## Reference
 
 - **Bottalico, Pasquale, and Charles J. Nudelman.**
   *Do-it-yourself voice dosimeter device: a tutorial and performance results.*
@@ -171,14 +171,14 @@ Please **cite this paper** when reporting results obtained with VoxDose.
 
 ---
 
-## 👥 Authors & Credits
+## Authors & Credits
 
 - **Original MATLAB Algorithms**: Prof. **Pasquale Bottalico** (University of Illinois at Urbana–Champaign)
 - **Python Adaptation & GUI**: **Tiago Lima Bicalho Cruz** (FonoTech Academy, Brazil)
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License**.  
 © 2025 FonoTech Academy.
