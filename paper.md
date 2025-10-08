@@ -104,8 +104,7 @@ installation procedure is as follows:
 
 -   Python 3.9 or later (tested on Windows, macOS, Linux)
 
--   Required libraries: numpy, scipy, matplotlib, pandas, PySide6,
-    > praat-parselmouth, openpyxl
+-   Required libraries: numpy, scipy, matplotlib, pandas, PySide6, praat-parselmouth, openpyxl
 
 **Step-by-step**
 
@@ -155,11 +154,10 @@ installation procedure is as follows:
     (default) or re-reference to 50 cm:
 
 $$SPL_{target} = SPL_{measured} - 20\log_{\, 10}\left( \frac{d_{cal}}{d_{target}} \right)$$      
-
+        
+    -   This correction ensures that all SPL values - and consequently all derived dose measures
+        (Dt, VLI, Dd, De, Dr) - are expressed in absolute, physically valid units consistent with the selected reference distance.
     
-
-    
-    -   This correction ensures that all SPL values - and consequently all derived dose measures (Dt, VLI, Dd, De, Dr) - are expressed in absolute, physically valid units consistent with the selected reference distance.
 -   Interactive Graphical User Interface (GUI) with:
 
     -   File selection (voice recordings and calibration recording for
