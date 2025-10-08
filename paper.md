@@ -162,7 +162,7 @@ $$SPL_{target} = SPL_{measured} - 20\log_{\, 10}\left( \frac{d_{cal}}{d_{target}
     reference distance.
 
 ```{=html}
-<!-- -->
+
 ```
 -   Interactive Graphical User Interface (GUI) with:
 
