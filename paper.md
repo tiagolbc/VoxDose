@@ -305,21 +305,15 @@ VoxDose does not compete with these hardware systems, but instead
 provides a software-only solution for analysis and visualization of
 vocal dose metrics. It is designed to:
 
--   Process pre-recorded audio files (e.g., WAV) rather than raw
-    > accelerometer signals.
+-   Process pre-recorded audio files (e.g., WAV) rather than raw accelerometer signals.
 
--   Implement validated mathematical models of vocal dose (Dt, VLI, Dd,
-    > De, Dr) \[@Titze2003; \@Bottalico2012\].
+-   Implement validated mathematical models of vocal dose (Dt, VLI, Dd, De, Dr) \[@Titze2003; \@Bottalico2012\].
 
--   Integrate SPL calibration against sound level meter values, ensuring
-    > external consistency.
+-   Integrate SPL calibration against sound level meter values, ensuring external consistency.
 
--   Offer open-source accessibility, in contrast to closed proprietary
-    > ecosystems.
+-   Offer open-source accessibility, in contrast to closed proprietary ecosystems.
 
--   Facilitate research and clinical practice where hardware dosimeters
-    > are not available, or where recordings need retrospective
-    > analysis.
+-   Facilitate research and clinical practice where hardware dosimeters are not available, or where recordings need retrospective analysis.
 
 In this sense, VoxDose is best understood as a complementary tool:
 hardware dosimeters capture real-life ambulatory data, while VoxDose
