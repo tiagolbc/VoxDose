@@ -160,6 +160,9 @@ $$SPL_{target} = SPL_{measured} - 20\log_{\, 10}\left( \frac{d_{cal}}{d_{target}
         derived dose measures (Dt, VLI, Dd, De, Dr)---are expressed in
         absolute, physically valid units consistent with the selected
         reference distance.
+
+```{=html}
+<!-- -->
 ```
 -   Interactive Graphical User Interface (GUI) with:
 
