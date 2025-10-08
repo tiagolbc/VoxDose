@@ -161,8 +161,6 @@ $$SPL_{target} = SPL_{measured} - 20\log_{\, 10}\left( \frac{d_{cal}}{d_{target}
         absolute, physically valid units consistent with the selected
         reference distance.
 
-
-```
 -   Interactive Graphical User Interface (GUI) with:
 
     -   File selection (voice recordings and calibration recording for
