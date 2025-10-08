@@ -157,7 +157,7 @@ installation procedure is as follows:
 $$SPL_{target} = SPL_{measured} - 20\log_{\, 10}\left( \frac{d_{cal}}{d_{target}} \right)$$      
 
     
-    -   This correction ensures that all SPL values—and consequently all derived dose measures (Dt, VLI, Dd, De, Dr)—are expressed in absolute, physically valid units consistent with the selected reference distance.
+    -   This correction ensures that all SPL values - and consequently all derived dose measures (Dt, VLI, Dd, De, Dr) - are expressed in absolute, physically valid units consistent with the selected reference distance.
     
 -   Interactive Graphical User Interface (GUI) with:
 
