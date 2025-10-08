@@ -1,13 +1,26 @@
-**Title: VoxDose: An Open-Source Software for Vocal Dose Analysis**
-
-**Authors:** Tiago Lima Bicalho Cruz^a^ & Pasquale Bottalico^b^
-
-^a^ Fonotech Academy, Belo Horizonte, Brazil
-
-Correspondence: fonotechacademy@gmail.com
-
-^b^ Department of Speech and Hearing Science, University of Illinois at
-Urbana--Champaign
+---
+title: "VoxDose: An Open-Source Software for Vocal Dose Analysis"
+tags:
+  - Python
+  - voice science
+  - acoustics
+  - vocal dose
+  - occupational voice
+authors:
+  - name: Tiago Lima Bicalho Cruz
+    orcid: 0000-0002-8355-5436
+    corresponding: true
+    affiliation: 1
+  - name: Pasquale Bottalico
+    affiliation: 2
+affiliations:
+  - name: Fonotech Academy, Belo Horizonte, Brazil
+    index: 1
+  - name: Department of Speech and Hearing Science, University of Illinois at Urbana–Champaign, United States
+    index: 2
+date: 08 October 2025
+bibliography: paper.bib
+---
 
 **Introduction**
 
