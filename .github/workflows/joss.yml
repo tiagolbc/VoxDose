@@ -3,10 +3,10 @@ name: Compile JOSS Paper
 on:
   push:
     paths:
-      - 'paper/**'
+      - '**'
   pull_request:
     paths:
-      - 'paper/**'
+      - '**'
 
 jobs:
   build:
