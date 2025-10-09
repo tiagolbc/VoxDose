@@ -40,7 +40,7 @@ cycle dose (Dc/VLI), the total number of oscillations; distance dose
 (Dd), the cumulative distance traveled by the vocal folds; energy
 dissipation dose (De), the mechanical energy absorbed by tissue; and
 radiated energy dose (Dr), the acoustic energy radiated to the
-environment \[@Titze2003; \@Švec2004\]. These parameters provide a
+environment \[@Titze2003; \@Svec2004\]. These parameters provide a
 multidimensional perspective on vocal load, going beyond simple averages
 of fundamental frequency (F0) and sound pressure level (SPL).
 
@@ -296,7 +296,7 @@ systems. Early solutions, such as speech timers and voice accumulators
 time, with later advancements incorporating measures like the total
 number of vocal fold oscillations. More advanced devices, like the
 KayPENTAX Ambulatory Phonation Monitor (APM 3200) and the NCVS dosimeter
-\[@Švec2004\], introduced accelerometer-based monitoring of F0, SPL, and
+\[@Svec2004\], introduced accelerometer-based monitoring of F0, SPL, and
 phonation time, enabling the first large-scale studies of vocal load.
 Commercial successors---including VocaLog2 (Griffin Labs), VoxLog
 (Sonvox AB), and Voice-Care (PR.O.VOICE)---continue this tradition, but
