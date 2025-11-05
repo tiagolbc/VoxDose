@@ -1,0 +1,40 @@
+[project]
+name = "voxdose"
+version = "1.0.2"
+description = "Open-source vocal dose analyzer for voice professionals"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Tiago Lima Bicalho Cruz", email = "fonotechacademy@gmail.com" }]
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "soundfile",
+  "PySide6",
+  "openpyxl",
+  "scipy",
+  "parselmouth",
+]
+
+[project.urls]
+Homepage = "https://github.com/tiagolbc/voxdose"
+Repository = "https://github.com/tiagolbc/voxdose"
+
+[build-system]
+requires = ["setuptools>=64", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["voxdose_gui*", "voxdose_core*", "voxdose_reports*"]
+
+[tool.setuptools.package-data]
+voxdose_gui = ["assets/*", "assets/**/*"]
+
+[project.scripts]
+voxdose = "voxdose_gui.voxdose_app:main"
