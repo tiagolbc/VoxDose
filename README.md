@@ -79,15 +79,17 @@ To use VoxDose correctly, you need:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/VoxDose.git
+git clone https://github.com/tiagolbc/VoxDose.git
 cd VoxDose
 ```
 
-Run the application:
+Run the application directly from source:
 
 ```bash
-python main_gui.py
+python src/voxdose_gui/voxdose_app.py
 ```
+
+Alternatively, you can open the project folder in an IDE (e.g., VS Code) and run `voxdose_app.py`.
 
 ---
 
@@ -104,7 +106,7 @@ python main_gui.py
 - Save the file (e.g., `calibration_78dB.wav`) and note the dBA value.
 
 ### 3) Start VoxDose
-- Launch with `python main_gui.py`.
+- Launch with `python src/voxdose_gui/voxdose_app.py`.
 - A splash screen will appear, followed by the main window.
 
 ![GUI Example](figures/gui.png)
@@ -166,7 +168,6 @@ python main_gui.py
   *Do-it-yourself voice dosimeter device: a tutorial and performance results.*
   *Journal of Speech, Language, and Hearing Research* 66, no. 7 (2023): 2149–2163.
   https://doi.org/10.1044/2023_JSLHR-22-00456
-
 
 ---
 
