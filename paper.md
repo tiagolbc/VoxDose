@@ -133,7 +133,7 @@ installation procedure is as follows:
 
 6.  Run the application:
 
-7.  python main_gui.py
+7.  python src/voxdose_gui/voxdose_app.py
 
 **\
 **
