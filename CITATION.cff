@@ -1,8 +1,10 @@
 cff-version: 1.2.0
 message: "Please cite VoxDose 2.0 and the original dose framework."
 type: software
-title: "VoxDose 2.0"
+title: "VoxDose 2.0: scientific vocal dose analysis"
 version: 2.0.2
+doi: "10.5281/zenodo.24253185"
+commit: "9177d4e4b744b451b6b799c6d0e277fccded8e45"
 date-released: 2026-11-15
 url: "https://github.com/tiagolbc/VoxDose/releases/tag/v2.0.2"
 repository-code: "https://github.com/tiagolbc/VoxDose"

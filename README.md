@@ -9,6 +9,8 @@ Scientific software for vocal dose analysis, comparison of long recordings, and 
 
 The original algorithms and dose framework remain credited separately from the implementation and changes in VoxDose. See [METHODS](docs/METHODS.md) for numerical methods and corrections. This is a research tool; its outputs do not establish a diagnosis or a universal fatigue threshold.
 
+[![DOI for version 2.0.2](https://zenodo.org/badge/DOI/10.5281/zenodo.24253185.svg)](https://doi.org/10.5281/zenodo.24253185)
+
 [Português brasileiro](README.pt-BR.md) · [English manual](docs/Manual_en.pdf) · [Manual em português](docs/Manual_pt_BR.pdf) · [Changes](CHANGELOG.md)
 
 ![Analysis interface — synthetic demonstration](docs/images/en_01.png)
@@ -66,7 +68,7 @@ De is reported in **J/m³** and Dr in **J**. CPPS/HNR are acoustic measures, not
 
 ## Windows application and installer
 
-The tested Windows delivery comprises a single-file `VoxDose-2.0.exe` and an **NSIS installer** containing the application, both PDF manuals, attribution, shortcuts and uninstaller. Python is included in these binaries. Large executables/installers are excluded from Git and belong in release/download assets. Publishing this source tree does not imply that a GitHub binary release has been uploaded.
+The tested Windows delivery comprises a single-file `VoxDose-2.0.exe` and an **NSIS installer** containing the application, both PDF manuals, attribution, shortcuts and uninstaller. Python is included in these binaries. Download the [Windows installer](https://github.com/tiagolbc/VoxDose/releases/download/v2.0.2/VoxDose-2.0.2-Windows-Setup.exe), [portable EXE](https://github.com/tiagolbc/VoxDose/releases/download/v2.0.2/VoxDose-2.0.exe), or [portable ZIP with documentation](https://github.com/tiagolbc/VoxDose/releases/download/v2.0.2/VoxDose-2.0-Windows-portable.zip) from the [published release](https://github.com/tiagolbc/VoxDose/releases/tag/v2.0.2). Checksums and both manuals are attached to the same release. Large binaries are distributed as release assets rather than Git source files.
 
 To build on Windows:
 
@@ -101,6 +103,16 @@ python tools/validate_synthetic.py
 The regression suite contains **53 tests**. The recorded Windows delivery passed three isolated-EXE rounds, each with 53 source tests and 45 application checks, plus three actual NSIS install/launch/uninstall cycles, each with 13 installer checks and the application checks. See [validation records](validation/README.md).
 
 The independent synthetic ground-truth study met **142/144 acceptance criteria**. Two F0 precision criteria at SNR 10 dB remain unmet; `validate_synthetic.py` intentionally exits with code 1 to expose them. CPPS/HNR lack assigned analytical ground truth. These tests verify code and model equations, not clinical validity or robustness in every real recording. Windows portability was checked with isolated copies and Python removed from PATH, rather than in a clean VM.
+
+## Citation
+
+For analyses performed with **version 2.0.2**, cite the version-specific Zenodo DOI:
+
+> Cruz, T. L. B. (2026). *VoxDose 2.0: scientific vocal dose analysis* (Version 2.0.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24253185
+
+The [concept DOI](https://doi.org/10.5281/zenodo.17219232) represents **all versions** and resolves to the latest archived version; it does not identify a fixed software version. GitHub's **Cite this repository** reads the version-specific DOI from [CITATION.cff](CITATION.cff). A [BibTeX entry](docs/citation.bib) is also provided.
+
+The software citation identifies the VoxDose adaptation and development. **Pasquale Bottalico's original MATLAB dosimetry code remains explicitly credited**; cite the original dosimetry sources when describing the underlying methods, as listed in CITATION.cff and METHODS.
 
 ## Documentation and history
 
