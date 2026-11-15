@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "checks": {
+    "root_exe_matches_validated_binary": true,
+    "installer_matches_validated_setup": true,
+    "legacy_launcher_updated": true,
+    "existing_working_copy_starts_english": true,
+    "portable_crc_valid": true,
+    "portable_one_exe_no_internal": true,
+    "portable_exe_hash": true,
+    "mac_source_crc_valid": true,
+    "mac_source_contains_native_builder": true,
+    "mac_source_no_fake_binary": true,
+    "mac_not_misrepresented": true,
+    "all_six_rounds_passed": true
+  }
+}

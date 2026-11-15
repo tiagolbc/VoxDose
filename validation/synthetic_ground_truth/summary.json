@@ -1,0 +1,45 @@
+{
+  "seed": 20261115,
+  "acceptance_checks": 144,
+  "passed": 142,
+  "failed": 2,
+  "characterization_checks": 3,
+  "cases": 17,
+  "numerical_sensitivity_digital_per_pa": 0.05,
+  "pressure_reference_pa": 2e-05,
+  "cpps_hnr_ground_truth": false,
+  "limitations": [
+    "Assigned SPL is a numerical calibration contract, not a physical microphone validation.",
+    "The independent scalar reference verifies code against model equations, not the biological accuracy of the model.",
+    "CPPS/HNR have no assigned analytical ground truth here; no accuracy claim is made for them.",
+    "Results from clean periodic signals do not establish validity in dysphonic voices, real environments or contact sensors."
+  ],
+  "failed_checks": [
+    {
+      "case": "harmonic_noise_snr_10dB",
+      "measure": "f0_median_absolute_error_hz",
+      "true": 0.0,
+      "estimated": 0.9223318805126866,
+      "absolute_error": 0.9223318805126866,
+      "relative_error": null,
+      "tolerance": 0.5,
+      "criterion": "absolute",
+      "unit": "Hz",
+      "role": "acceptance",
+      "passed": false
+    },
+    {
+      "case": "harmonic_noise_snr_10dB",
+      "measure": "f0_p95_relative_error",
+      "true": 0.0,
+      "estimated": 0.011631913695582396,
+      "absolute_error": 0.011631913695582396,
+      "relative_error": null,
+      "tolerance": 0.01,
+      "criterion": "absolute",
+      "unit": "fraction",
+      "role": "acceptance",
+      "passed": false
+    }
+  ]
+}

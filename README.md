@@ -1,184 +1,114 @@
-# VoxDose: Vocal Dose Analyzer
+# VoxDose 2.0
 
-**VoxDose** is an open-source software for **vocal dose analysis**. It computes vocal load metrics from voice recordings, based on calibrated measurements of **Sound Pressure Level (SPL, dBA)** and **fundamental frequency (F0)**.
+<img src="voxdose/assets/icon.svg" width="72" alt="VoxDose icon">
 
-The algorithms were **originally developed in MATLAB by Prof. Pasquale Bottalico** and later adapted into Python for VoxDose (with permission). VoxDose enables researchers, clinicians, and voice professionals to objectively quantify vocal use during naturalistic recordings.
+Scientific software for vocal dose analysis, comparison of long recordings, and descriptive self-reports of vocal effort and fatigue. Current revision: **2.0.2**.
 
----
+**Original MATLAB dosimetry code: Pasquale Bottalico.**  
+**VoxDose adaptation, development and modernization: Tiago Lima Bicalho Cruz — Universidade Federal de Minas Gerais (UFMG), Brazil.**
 
-## Features
+The original algorithms and dose framework remain credited separately from the implementation and changes in VoxDose. See [METHODS](docs/METHODS.md) for numerical methods and corrections. This is a research tool; its outputs do not establish a diagnosis or a universal fatigue threshold.
 
-- Computes per-frame **SPL (dBA)** and **F0 (Hz)** from **`.wav`** or **high-quality `.mp3`** recordings (WAV preferred).
-- Calibration using **one reference vowel recording** (subject + SLM/app measurement).
-- Calculates vocal doses:
-  - **Phonation time (Dt)**
-  - **Vocal Loading Index (VLI)**
-  - **Distance Dose (Dd)**
-  - **Energy Dissipation Dose (De)**
-  - **Radiation Dose (Dr)**
-- Provides **mean and standard deviation** of SPL and F0.
-- Exports results to **Excel spreadsheets** (`.xlsx`).
-- Generates visualizations: waveform, SPL curve, and pitch curve.
-- User-friendly **GUI built with PySide6** (Qt).
-- Includes a splash screen and "About" dialog with credits.
+[Português brasileiro](README.pt-BR.md) · [English manual](docs/Manual_en.pdf) · [Manual em português](docs/Manual_pt_BR.pdf) · [Changes](CHANGELOG.md)
 
----
+![Analysis interface — synthetic demonstration](docs/images/en_01.png)
 
-## System Requirements
+## Capabilities
 
-- Python 3.9+
-- Recommended OS: Windows 10/11 or macOS 13+
-- Dependencies:
-  - `numpy`
-  - `pandas`
-  - `matplotlib`
-  - `soundfile`
-  - `scipy`
-  - `PySide6`
+- PySide6 interface with Analysis, Doses, Charts, Comparison, Diary, Settings and Guide tabs.
+- **English by default**, persistent Brazilian Portuguese selection, light/dark themes, and immediate help on hovering over `(i)`, without clicking or dismissing a dialog. Help can be disabled in Settings.
+- Block processing for long recordings, progress reporting and cancellation.
+- Phonation time/percentage, cycle dose, VLI, modeled distance/energy/radiation doses, F0, level, CPPS/HNR and pause summaries, with explicit units and availability conditions.
+- A/Z calibration for air microphones; dedicated experimental contact-sensor calibration and comparison restrictions.
+- Comparison of long recordings using absolute or relative time, rates normalized by duration, and compatibility checks.
+- Combined and individual figures, configurable plots, a full results-table PNG, Excel, CSV and SVG exports.
+- Reopenable `.voxdose` sessions and local processing, without cloud audio uploads.
 
-Install all dependencies with:
+![Vocal dose results — artificial demonstration](docs/images/en_02.png)
+
+## Run from source
+
+Use Python **3.11 or newer**. From the repository root, create an environment:
 
 ```bash
-pip install -r requirements.txt
+python -m venv .venv
 ```
 
-> **Note on MP3:** MP3 import depends on your local `libsndfile` build (used by `soundfile`). WAV is recommended for maximum compatibility. If you record MP3, use **48 kHz / 320 kbps** or convert to WAV before analysis.
+Activate it on Windows:
 
----
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
 
-## Hardware and Calibration
-
-To use VoxDose correctly, you need:
-
-- A **contact microphone** or **head-mounted microphone**.
-- A **portable recorder** capable of uncompressed `.wav` or high-quality `.mp3`.
-- A **Sound Level Meter (SLM)** or a **reliable smartphone app** such as *dB Meter*.
-
-### Monitoring Session (before analysis)
-
-1. Attach the microphone to the subject and connect it to the portable recorder.
-2. Record for the desired period (e.g., during one activity or an entire day).
-3. At the end of the monitoring session, stop the recorder. You will analyze this file later in VoxDose.
-
-### Calibration Procedure (single file)
-
-1. Ask the subject to sustain the vowel **/a/** in a **habitual tone** (normal speaking pitch and loudness).
-2. Place the **SLM/smartphone app** at **30 cm from the subject’s mouth** during recording.
-3. Record the vowel using the **same microphone/recorder setup** that will be used for monitoring.
-4. Note the **SPL value (in dBA)** shown by the SLM/app.
-5. **Save this recording as** `calibration_[value]dB.wav` (e.g., `calibration_78dB.wav`). Including the SPL in the file name is recommended.
-6. In VoxDose, load this calibration file and input the **measured SPL value** into the calibration field.
-7. VoxDose will automatically adjust SPL measurements for all subsequent recordings.
-
-⚠️ **Recalibrate if** the microphone/recorder setup changes, the recording distance changes, or a different environment/subject is analyzed.
-
----
-
-## Installation
-
-Clone the repository:
+Or on macOS/Linux:
 
 ```bash
-git clone https://github.com/tiagolbc/VoxDose.git
-cd VoxDose
+source .venv/bin/activate
 ```
 
-Run the application directly from source:
+Then install and start:
 
 ```bash
-python src/voxdose_gui/voxdose_app.py
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
+python main.py
 ```
 
-Alternatively, you can open the project folder in an IDE (e.g., VS Code) and run `voxdose_app.py`.
+The `voxdose` command is also available. The required Praat package is `praat-parselmouth`; the unrelated `parselmouth` package is not a substitute. Prefer WAV/FLAC; other formats depend on `libsndfile` support.
 
----
+The `examples` directory contains **artificial signals and ratings**, not patient data or normative references. Open `Synthetic_A.voxdose` and `Synthetic_B.voxdose` to explore comparison. For reanalysis, select the calibration file from your own checkout.
 
-## Usage
+## Calibration and interpretation
 
-### 1) Monitor the Subject
-- Attach the microphone to the subject and connect it to the portable recorder.
-- Record for the desired period (e.g., during one activity or an entire day).
-- Stop the recorder at the end of the session.
+Without calibration, levels are digital (dBFS), with available time/cycle/periodicity measures. Modeled Dd, De and Dr require valid **Z-weighted SPL**. Do not interchange dBA and dBZ or transfer calibration between gains, placements, devices or couplings.
 
-### 2) Prepare Calibration File
-- Record the subject sustaining **/a/** in habitual voice.
-- Use an SLM/app at **30 cm** to measure the SPL.
-- Save the file (e.g., `calibration_78dB.wav`) and note the dBA value.
+De is reported in **J/m³** and Dr in **J**. CPPS/HNR are acoustic measures, not direct fatigue measures. Diary ratings are descriptive 0–10 self-reports, not a replacement for a validated questionnaire. Contact-sensor outputs remain experimental. The [research report](docs/REPORT.md) explains the Hunter and collaborators literature review and its limits.
 
-### 3) Start VoxDose
-- Launch with `python src/voxdose_gui/voxdose_app.py`.
-- A splash screen will appear, followed by the main window.
+## Windows application and installer
 
-![GUI Example](figures/gui.png)
+The tested Windows delivery comprises a single-file `VoxDose-2.0.exe` and an **NSIS installer** containing the application, both PDF manuals, attribution, shortcuts and uninstaller. Python is included in these binaries. Large executables/installers are excluded from Git and belong in release/download assets. Publishing this source tree does not imply that a GitHub binary release has been uploaded.
 
-### 4) Select File
-- Click **Select WAV File** and choose the long-form recording you want to analyze.
+To build on Windows:
 
-### 5) Calibrate
-- Load the **calibration file**.
-- Enter the measured SPL value into the calibration input field.
-- Set microphone distance (default = **0.30 m**).
+```powershell
+python -m pip install pyinstaller
+python tools/build_windows.py
+$env:MAKENSIS = 'C:\Program Files (x86)\NSIS\makensis.exe'
+python tools/build_installer.py
+```
 
-### 6) Run Analysis
-- Click **Run Analysis**.
-- VoxDose extracts SPL and F0, computes vocal doses, and saves results to Excel.
-- Visual plots are displayed within the GUI.
+Install NSIS separately and adjust `MAKENSIS` to its actual path. The installer defaults to the current user's `%LOCALAPPDATA%\Programs\VoxDose 2.0`. Installed data is stored under `%LOCALAPPDATA%\VoxDose`; portable data goes alongside the EXE. Uninstallation preserves results and preferences.
 
-![Results Example](figures/results.png)
+## macOS build status
 
-### 7) View Results
-- Open the generated `.xlsx` files for detailed data.
-- Example outputs:
-  - `[file]_Summary.png` → waveform, SPL, and F0 plots.
-  - `[file].xlsx` → per-frame SPL and F0.
-  - `[file]_VocalDoses.xlsx` → summary vocal doses.
+**No macOS binary has been generated or validated for this revision.** A native builder is included:
 
----
+```bash
+bash Build-macOS.command
+```
 
-## Output Metrics
+Run it **on macOS**, with Python 3.11+ available. It builds an architecture-specific `.app`, runs three runtime-verification rounds, then creates `.dmg` and `.pkg` files. It does not claim a universal binary. Developer ID signing can be supplied through `APPLE_CODESIGN_IDENTITY`; Apple notarization and installer signing are not configured. Mac data goes under `~/Library/Application Support/VoxDose`, outside the bundle.
 
-**Frame-level data (Excel)**
-- **Time (s)**
-- **SPL (dBA)**
-- **F0 (Hz)**
+The `.pkg` produced internally by a **Windows** PyInstaller build is a Windows CArchive, not an Apple installer. It must not be advertised as a Mac download. See [release notes](docs/RELEASE_2.0.2.md).
 
-**Summary vocal doses (Excel)**
-- **Dt (s)** — Voiced time
-- **VLI (kcycles)** — Vocal Loading Index
-- **Dd (m)** — Distance dose
-- **De (J)** — Energy dissipation dose
-- **Dr (J)** — Radiated energy dose
-- **Dt_p (%)** — Voiced percentage
-- **Dd_n (m/s)** — Normalized distance dose
-- **De_n (J/s)** — Normalized energy dose
-- **Dr_n (J/s)** — Normalized radiation dose
-- **SPL_mean (dBA)**, **SPL_sd (dBA)**
-- **F0_mean (Hz)**, **F0_sd (Hz)**
+## Validation
 
-> **Analysis details (implementation notes):**
-> - SPL is computed as **A-weighted** and analyzed at **20 Hz** time resolution (0.05 s frames).
-> - Pitch (F0) is estimated via a **cepstral method** with robust guards for invalid/unvoiced frames.
-> - Frame pairs with invalid SPL or F0 are treated as **non-voiced** (set to zero) before dose computation.
+```bash
+python -m pytest -q
+python tools/validate_synthetic.py
+```
 
----
+The regression suite contains **53 tests**. The recorded Windows delivery passed three isolated-EXE rounds, each with 53 source tests and 45 application checks, plus three actual NSIS install/launch/uninstall cycles, each with 13 installer checks and the application checks. See [validation records](validation/README.md).
 
-## Reference
+The independent synthetic ground-truth study met **142/144 acceptance criteria**. Two F0 precision criteria at SNR 10 dB remain unmet; `validate_synthetic.py` intentionally exits with code 1 to expose them. CPPS/HNR lack assigned analytical ground truth. These tests verify code and model equations, not clinical validity or robustness in every real recording. Windows portability was checked with isolated copies and Python removed from PATH, rather than in a clean VM.
 
-- **Bottalico, Pasquale, and Charles J. Nudelman.**
-  *Do-it-yourself voice dosimeter device: a tutorial and performance results.*
-  *Journal of Speech, Language, and Hearing Research* 66, no. 7 (2023): 2149–2163.
-  https://doi.org/10.1044/2023_JSLHR-22-00456
+## Documentation and history
 
----
+- [English manual](docs/Manual_en.pdf) and [Brazilian Portuguese manual](docs/Manual_pt_BR.pdf).
+- [Methods](docs/METHODS.md), [research/development report](docs/REPORT.md), and [2.0.2 release notes](docs/RELEASE_2.0.2.md).
+- [CITATION.cff](CITATION.cff) and [NOTICE](NOTICE.txt) retain provenance and attribution.
+- [legacy/v1](legacy/v1) preserves the former GitHub source, tests and metadata. The existing `paper.md`, bibliography and historical figures remain unchanged and describe the earlier implementation.
 
-## Authors & Credits
+The repository's existing **non-commercial LICENSE** is preserved; read [LICENSE](LICENSE) for its actual terms. Third-party authorship/licenses remain applicable. These terms are not relabeled as an unrestricted MIT license.
 
-- **Original MATLAB Algorithms**: Prof. **Pasquale Bottalico** (University of Illinois at Urbana–Champaign)
-- **Python Adaptation & GUI**: **Tiago Lima Bicalho Cruz** (FonoTech Academy, Brazil)
-
----
-
-## License
-
-This project is licensed under the **MIT License**.  
-© 2025 FonoTech Academy.
+Key references: [Bottalico & Nudelman (2023)](https://doi.org/10.1044/2023_JSLHR-23-00060) and [Titze, Švec & Popolo (2003)](https://pmc.ncbi.nlm.nih.gov/articles/PMC3158591/).

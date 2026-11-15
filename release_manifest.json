@@ -1,0 +1,41 @@
+{
+  "version": "2.0.2",
+  "date": "2026-11-15",
+  "original_dosimetry_code": "Pasquale Bottalico",
+  "voxdose_adaptation_development": "Tiago Lima Bicalho Cruz",
+  "affiliation": "Universidade Federal de Minas Gerais (UFMG)",
+  "default_language": "en_US",
+  "help": "immediate hover or keyboard focus; no modal dialog",
+  "exe_sha256": "1b0a15ef41632d602f269709742085de168e19b1161685b8b08673922de17ed2",
+  "setup_sha256": "dad56b50c27733289f0f1147f90b54ddfe15cdaaa60390d77b0086f0d83cbf08",
+  "windows_signed": false,
+  "windows": {
+    "runtime_rounds": 3,
+    "source_tests_per_round": [
+      53,
+      53,
+      53
+    ],
+    "runtime_checks_per_round": [
+      45,
+      45,
+      45
+    ],
+    "installer_rounds": 3,
+    "installer_checks_per_round": [
+      13,
+      13,
+      13
+    ],
+    "installer_compiler": "NSIS 3.13",
+    "per_user": true,
+    "python_embedded": true
+  },
+  "macos": {
+    "status": "source_only_native_build_pending",
+    "binary_created": false,
+    "binary_tested": false,
+    "source_package": "VoxDose-2.0.2-macOS-build-source.zip",
+    "reason": "Windows host; no macOS environment available."
+  }
+}

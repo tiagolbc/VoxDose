@@ -1,0 +1,7 @@
+*.command text eol=lf
+*.png binary
+*.ico binary
+*.pdf binary
+*.voxdose binary
+*.flac binary
+*.wav binary

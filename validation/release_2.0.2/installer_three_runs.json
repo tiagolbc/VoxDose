@@ -1,0 +1,71 @@
+{
+  "version": "2.0.2",
+  "all_passed": true,
+  "passed_rounds": 3,
+  "setup_sha256": "dad56b50c27733289f0f1147f90b54ddfe15cdaaa60390d77b0086f0d83cbf08",
+  "runs": [
+    {
+      "round": 1,
+      "ok": true,
+      "checks": {
+        "install_exit_zero": true,
+        "installed_exe_matches_tested_onefile": true,
+        "both_manuals_and_report": true,
+        "installed_marker_present": true,
+        "registered_version_and_location": true,
+        "publisher_retains_both_attributions": true,
+        "start_menu_app_and_both_manuals": true,
+        "installed_application_analysis_help_and_exports": true,
+        "installed_default_english": true,
+        "uninstall_exit_zero": true,
+        "uninstall_removed_program_and_registration": true,
+        "uninstall_removed_shortcuts": true,
+        "uninstall_preserved_user_files": true
+      },
+      "setup_sha256": "dad56b50c27733289f0f1147f90b54ddfe15cdaaa60390d77b0086f0d83cbf08",
+      "application_sha256": "1b0a15ef41632d602f269709742085de168e19b1161685b8b08673922de17ed2"
+    },
+    {
+      "round": 2,
+      "ok": true,
+      "checks": {
+        "install_exit_zero": true,
+        "installed_exe_matches_tested_onefile": true,
+        "both_manuals_and_report": true,
+        "installed_marker_present": true,
+        "registered_version_and_location": true,
+        "publisher_retains_both_attributions": true,
+        "start_menu_app_and_both_manuals": true,
+        "installed_application_analysis_help_and_exports": true,
+        "installed_default_english": true,
+        "uninstall_exit_zero": true,
+        "uninstall_removed_program_and_registration": true,
+        "uninstall_removed_shortcuts": true,
+        "uninstall_preserved_user_files": true
+      },
+      "setup_sha256": "dad56b50c27733289f0f1147f90b54ddfe15cdaaa60390d77b0086f0d83cbf08",
+      "application_sha256": "1b0a15ef41632d602f269709742085de168e19b1161685b8b08673922de17ed2"
+    },
+    {
+      "round": 3,
+      "ok": true,
+      "checks": {
+        "install_exit_zero": true,
+        "installed_exe_matches_tested_onefile": true,
+        "both_manuals_and_report": true,
+        "installed_marker_present": true,
+        "registered_version_and_location": true,
+        "publisher_retains_both_attributions": true,
+        "start_menu_app_and_both_manuals": true,
+        "installed_application_analysis_help_and_exports": true,
+        "installed_default_english": true,
+        "uninstall_exit_zero": true,
+        "uninstall_removed_program_and_registration": true,
+        "uninstall_removed_shortcuts": true,
+        "uninstall_preserved_user_files": true
+      },
+      "setup_sha256": "dad56b50c27733289f0f1147f90b54ddfe15cdaaa60390d77b0086f0d83cbf08",
+      "application_sha256": "1b0a15ef41632d602f269709742085de168e19b1161685b8b08673922de17ed2"
+    }
+  ]
+}

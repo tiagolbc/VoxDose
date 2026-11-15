@@ -1,0 +1,8 @@
+numpy>=1.26,<3
+scipy>=1.11,<2
+soundfile>=0.13,<1
+praat-parselmouth>=0.4.6,<0.5
+PySide6>=6.8,<7
+matplotlib>=3.9,<4
+pandas>=2.2,<3
+openpyxl>=3.1,<4

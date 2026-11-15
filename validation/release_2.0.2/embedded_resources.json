@@ -1,0 +1,11 @@
+{
+  "embedded_manuals_match_final_files": {
+    "Manual_en.pdf": true,
+    "Manual_pt_BR.pdf": true,
+    "Relatorio_VoxDose_2.0.pdf": true
+  },
+  "windows_python_dll_in_internal_pkg": true,
+  "internal_pkg_is_apple_installer": false,
+  "exe_sha256": "1b0a15ef41632d602f269709742085de168e19b1161685b8b08673922de17ed2",
+  "numerical_core_unchanged": true
+}

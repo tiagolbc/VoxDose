@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Please cite VoxDose 2.0 and the original dose framework."
+type: software
+title: "VoxDose 2.0"
+version: 2.0.2
+date-released: 2026-11-15
+authors:
+  - family-names: Cruz
+    given-names: Tiago Lima Bicalho
+    affiliation: Universidade Federal de Minas Gerais
+abstract: "Local vocal exposure analysis, long-recording comparisons and descriptive self-ratings. Dose equations adapted from Pasquale Bottalico's original MATLAB code, with version 2.0 development by Tiago Lima Bicalho Cruz."
+references:
+  - type: article
+    title: "Do-It-Yourself Voice Dosimeter Device: A Tutorial and Performance Results"
+    authors:
+      - family-names: Bottalico
+        given-names: Pasquale
+      - family-names: Nudelman
+        given-names: Charles J.
+    year: 2023
+    doi: 10.1044/2023_JSLHR-23-00060
+  - type: article
+    title: "Vocal Dose Measures: Quantifying Accumulated Vibration Exposure in Vocal Fold Tissues"
+    authors:
+      - family-names: Titze
+        given-names: Ingo R.
+      - family-names: Svec
+        given-names: Jan G.
+      - family-names: Popolo
+        given-names: Peter S.
+    year: 2003
+    doi: 10.1044/1092-4388(2003/072)

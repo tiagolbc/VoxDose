@@ -1,0 +1,1647 @@
+{
+  "seed": 20261115,
+  "cases": [
+    {
+      "name": "steady_120Hz_70dBZ",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          20.0,
+          120,
+          70
+        ]
+      ],
+      "harmonics": [
+        1.0
+      ],
+      "snr_db": null,
+      "model": "male",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 2400.0,
+        "dd_m": 11.999649656870288,
+        "de_j_m3": 15886.796890906866,
+        "dr_j": 0.0006283185307179587
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 2400.0126455669215,
+        "vli_kcycles": 2.4000126455669215,
+        "dd_m": 11.999693932035624,
+        "de_j_m3": 15886.887552475288,
+        "dr_j": 0.0006283185356004881,
+        "dc_cycles_per_hour": 432002.27620204585,
+        "dc_cycles_per_phonation_s": 120.00063227834607,
+        "dd_m_per_hour": 2159.9449077664126,
+        "dd_m_per_phonation_s": 0.5999846966017812,
+        "de_j_m3_per_hour": 2859639.759445552,
+        "de_j_m3_per_phonation_s": 794.3443776237643,
+        "dr_j_per_hour": 0.11309733640808786,
+        "dr_j_per_phonation_s": 3.1415926780024404e-05,
+        "f0_mean": 120.00063227834607,
+        "f0_sd": 3.2192840442024802e-09,
+        "f0_p10": 120.00063227461588,
+        "f0_p50": 120.000632277572,
+        "f0_p90": 120.00063228237363,
+        "spl_z_mean": 70.0000000337481,
+        "spl_z_sd": 0.0,
+        "spl_z_p10": 70.0000000337481,
+        "spl_z_p50": 70.0000000337481,
+        "spl_z_p90": 70.0000000337481,
+        "spl_a_mean": 53.25607810901788,
+        "spl_a_sd": 0.002125396646834391,
+        "spl_a_p10": 53.25618453952478,
+        "spl_a_p50": 53.256184539524824,
+        "spl_a_p90": 53.25618453952487,
+        "level_mean": 53.25607810901788,
+        "level_sd": 0.002125396646834391,
+        "level_p10": 53.25618453952478,
+        "level_p50": 53.256184539524824,
+        "level_p90": 53.25618453952487,
+        "f0_range_st": 1.1192016195312655e-09,
+        "spl_z_leq": 70.0000000337481,
+        "spl_a_leq": 53.256078627406175,
+        "level_leq": 53.256078627406175,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 18.018187467037748,
+        "hnr_db": 69.18904634269366
+      },
+      "seconds_to_analyze": 1.2901629999978468,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "male",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "steady_120Hz_70dBZ",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "d9e6239140f69d204c2e28c99727fc7af8fa522c92058364e98bf2072210a00a",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "steady_240Hz_80dBZ",
+      "sample_rate": 44100,
+      "segments": [
+        [
+          20.0,
+          240,
+          80
+        ]
+      ],
+      "harmonics": [
+        1.0
+      ],
+      "snr_db": null,
+      "model": "female",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 4800.0,
+        "dd_m": 21.063599153401576,
+        "de_j_m3": 11877.096062883056,
+        "dr_j": 0.006283185307179586
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 4799.979142981843,
+        "vli_kcycles": 4.799979142981844,
+        "dd_m": 21.063544809677637,
+        "de_j_m3": 11877.052577269533,
+        "dr_j": 0.006283185327764824,
+        "dc_cycles_per_hour": 863996.2457367318,
+        "dc_cycles_per_phonation_s": 239.99895714909218,
+        "dd_m_per_hour": 3791.4380657419742,
+        "dd_m_per_phonation_s": 1.053177240483882,
+        "de_j_m3_per_hour": 2137869.463908516,
+        "de_j_m3_per_phonation_s": 593.8526288634766,
+        "dr_j_per_hour": 1.1309733589976685,
+        "dr_j_per_phonation_s": 0.0003141592663882412,
+        "f0_mean": 239.99895714909218,
+        "f0_sd": 2.0199894167953125e-09,
+        "f0_p10": 239.9989571465173,
+        "f0_p50": 239.99895714911824,
+        "f0_p90": 239.9989571516572,
+        "spl_z_mean": 80.00000001422855,
+        "spl_z_sd": 1.853958367212321e-13,
+        "spl_z_p10": 80.00000001422845,
+        "spl_z_p50": 80.00000001422845,
+        "spl_z_p90": 80.00000001422879,
+        "spl_a_mean": 70.93997177098805,
+        "spl_a_sd": 0.002766952630477206,
+        "spl_a_p10": 70.9401102925932,
+        "spl_a_p50": 70.94011029259325,
+        "spl_a_p90": 70.94011029259362,
+        "level_mean": 70.93997177098805,
+        "level_sd": 0.002766952630477206,
+        "level_p10": 70.9401102925932,
+        "level_p50": 70.94011029259325,
+        "level_p90": 70.94011029259362,
+        "f0_range_st": 3.707684276593729e-10,
+        "spl_z_leq": 80.00000001422853,
+        "spl_a_leq": 70.93997264870269,
+        "level_leq": 70.93997264870269,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 16.805603810998065,
+        "hnr_db": 93.50230470585822
+      },
+      "seconds_to_analyze": 1.3248528999974951,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "female",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_44100_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_44100_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_44100_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "steady_240Hz_80dBZ",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "e84ac17a8c4d98e6f7c7722fc291789bb74d84221331f44b0d907f40331a3849",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "harmonic_200Hz_75dBZ",
+      "sample_rate": 48000,
+      "segments": [
+        [
+          20.0,
+          200,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.4,
+        0.2
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 4000.0,
+        "dd_m": 17.56592401209327,
+        "de_j_m3": 22206.486563842638,
+        "dr_j": 0.0019869176531592202
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 4000.0513960701865,
+        "vli_kcycles": 4.0000513960701864,
+        "dd_m": 17.56604866005663,
+        "de_j_m3": 22206.685978200818,
+        "dr_j": 0.001986917649597376,
+        "dc_cycles_per_hour": 720009.2512926336,
+        "dc_cycles_per_phonation_s": 200.00256980350932,
+        "dd_m_per_hour": 3161.8887588101934,
+        "dd_m_per_phonation_s": 0.8783024330028315,
+        "de_j_m3_per_hour": 3997203.476076147,
+        "de_j_m3_per_phonation_s": 1110.3342989100408,
+        "dr_j_per_hour": 0.3576451769275276,
+        "dr_j_per_phonation_s": 9.93458824798688e-05,
+        "f0_mean": 200.00256980350932,
+        "f0_sd": 8.14373776343894e-11,
+        "f0_p10": 200.00256980339734,
+        "f0_p50": 200.0025698035256,
+        "f0_p90": 200.00256980360254,
+        "spl_z_mean": 74.99999999221461,
+        "spl_z_sd": 1.4210854715202004e-14,
+        "spl_z_p10": 74.99999999221463,
+        "spl_z_p50": 74.99999999221463,
+        "spl_z_p90": 74.99999999221463,
+        "spl_a_mean": 66.24245379176318,
+        "spl_a_sd": 0.007210434309893641,
+        "spl_a_p10": 66.24281476556654,
+        "spl_a_p50": 66.24281476556658,
+        "spl_a_p90": 66.24281476556662,
+        "level_mean": 66.24245379176318,
+        "level_sd": 0.007210434309893641,
+        "level_p10": 66.24281476556654,
+        "level_p50": 66.24281476556658,
+        "level_p90": 66.24281476556662,
+        "f0_range_st": 1.7763640648945366e-11,
+        "spl_z_leq": 74.99999999221463,
+        "spl_a_leq": 66.24245971191189,
+        "level_leq": 66.24245971191189,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 22.319043610612198,
+        "hnr_db": 85.38567213643071
+      },
+      "seconds_to_analyze": 1.1390342999948189,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "harmonic_200Hz_75dBZ",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "2dda59d7b4efc95fc7a22898708eaea43b716e0501bc9ab200e79dcfd6e253a6",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "low_50Hz_65dBZ",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          20.0,
+          50,
+          65
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.35
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 1000.0,
+        "dd_m": 3.825137202595445,
+        "de_j_m3": 1895.3909046134086,
+        "dr_j": 0.000198691765315922
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 1000.0037140036823,
+        "vli_kcycles": 1.0000037140036822,
+        "dd_m": 3.8251506206713337,
+        "de_j_m3": 1895.4010759208331,
+        "dr_j": 0.00019869176521754975,
+        "dc_cycles_per_hour": 180000.66852066282,
+        "dc_cycles_per_phonation_s": 50.00018570018411,
+        "dd_m_per_hour": 688.5271117208401,
+        "dd_m_per_phonation_s": 0.19125753103356669,
+        "de_j_m3_per_hour": 341172.19366575,
+        "de_j_m3_per_phonation_s": 94.77005379604165,
+        "dr_j_per_hour": 0.03576451773915896,
+        "dr_j_per_phonation_s": 9.934588260877488e-06,
+        "f0_mean": 50.00018570018411,
+        "f0_sd": 0.015612744707295253,
+        "f0_p10": 49.984494694985855,
+        "f0_p50": 50.01572057439013,
+        "f0_p90": 50.01572057565562,
+        "spl_z_mean": 64.9999999978498,
+        "spl_z_sd": 1.4210854715202004e-14,
+        "spl_z_p10": 64.99999999784981,
+        "spl_z_p50": 64.99999999784981,
+        "spl_z_p90": 64.99999999784981,
+        "spl_a_mean": 38.30676092171291,
+        "spl_a_sd": 0.3325078166904293,
+        "spl_a_p10": 37.97426711169278,
+        "spl_a_p50": 38.30665525129203,
+        "spl_a_p90": 38.63894274304235,
+        "level_mean": 38.30676092171291,
+        "level_sd": 0.3325078166904293,
+        "level_p10": 37.97426711169278,
+        "level_p50": 38.30665525129203,
+        "level_p90": 38.63894274304235,
+        "f0_range_st": 0.01081183864221025,
+        "spl_z_leq": 64.99999999784981,
+        "spl_a_leq": 38.31947745522528,
+        "level_leq": 38.31947745522528,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 16.822176483319055,
+        "hnr_db": null
+      },
+      "seconds_to_analyze": 1.2698900999967009,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "low_50Hz_65dBZ",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "737a95ebdbf1325e4b7c7c48ca38e32bbe38071b4ce8e661342650dc2c1bf2ee",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "high_800Hz_75dBZ",
+      "sample_rate": 48000,
+      "segments": [
+        [
+          20.0,
+          800,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.2
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 16000.0,
+        "dd_m": 25.76602890855587,
+        "de_j_m3": 30922.706222520872,
+        "dr_j": 0.0019869176531592202
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 15999.918384619428,
+        "vli_kcycles": 15.999918384619429,
+        "dd_m": 25.76601803344041,
+        "de_j_m3": 30922.712530178396,
+        "dr_j": 0.0019869176296684016,
+        "dc_cycles_per_hour": 2879985.309231497,
+        "dc_cycles_per_phonation_s": 799.9959192309714,
+        "dd_m_per_hour": 4637.883246019273,
+        "dd_m_per_phonation_s": 1.2883009016720206,
+        "de_j_m3_per_hour": 5566088.255432111,
+        "de_j_m3_per_phonation_s": 1546.1356265089198,
+        "dr_j_per_hour": 0.35764517334031226,
+        "dr_j_per_phonation_s": 9.934588148342008e-05,
+        "f0_mean": 799.9959192309714,
+        "f0_sd": 5.1762573543591325e-12,
+        "f0_p10": 799.9959192309665,
+        "f0_p50": 799.9959192309695,
+        "f0_p90": 799.9959192309786,
+        "spl_z_mean": 74.99999994865448,
+        "spl_z_sd": 0.0,
+        "spl_z_p10": 74.99999994865448,
+        "spl_z_p50": 74.99999994865448,
+        "spl_z_p90": 74.99999994865448,
+        "spl_a_mean": 74.28888565510158,
+        "spl_a_sd": 0.002034841333108951,
+        "spl_a_p10": 74.28898752445643,
+        "spl_a_p50": 74.28898752445646,
+        "spl_a_p90": 74.28898752445649,
+        "level_mean": 74.28888565510158,
+        "level_sd": 0.002034841333108951,
+        "level_p10": 74.28898752445643,
+        "level_p50": 74.28898752445646,
+        "level_p90": 74.28898752445649,
+        "f0_range_st": 2.6139960271129534e-13,
+        "spl_z_leq": 74.99999994865448,
+        "spl_a_leq": 74.28888613032338,
+        "level_leq": 74.28888613032338,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 19.620723540096254,
+        "hnr_db": 135.66622163347088
+      },
+      "seconds_to_analyze": 1.313873000035528,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "high_800Hz_75dBZ",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "53198d38213e946b9ee8e4ee4e1e3a98e19b14cd9ce96ce571e4f49c0f4e0cb6",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "noninteger_sample_grid_190Hz",
+      "sample_rate": 11025,
+      "segments": [
+        [
+          20.0,
+          190,
+          72
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.3
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 3800.0,
+        "dd_m": 15.037021562813226,
+        "de_j_m3": 16616.066355230963,
+        "dr_j": 0.000995817762032062
+      },
+      "measured_summary": {
+        "duration_s": 19.999999999999996,
+        "dt_s": 19.999999999999996,
+        "dt_pct": 100.0,
+        "dc_cycles": 3799.9862466005206,
+        "vli_kcycles": 3.7999862466005205,
+        "dd_m": 15.036989558160268,
+        "de_j_m3": 16616.020518532947,
+        "dr_j": 0.0009958177663258808,
+        "dc_cycles_per_hour": 683997.5243880939,
+        "dc_cycles_per_phonation_s": 189.99931233002607,
+        "dd_m_per_hour": 2706.6581204688487,
+        "dd_m_per_phonation_s": 0.7518494779080136,
+        "de_j_m3_per_hour": 2990883.693335931,
+        "de_j_m3_per_phonation_s": 830.8010259266475,
+        "dr_j_per_hour": 0.17924719793865856,
+        "dr_j_per_phonation_s": 4.979088831629405e-05,
+        "f0_mean": 189.99931233002607,
+        "f0_sd": 4.354550648243527e-05,
+        "f0_p10": 189.99928679820312,
+        "f0_p50": 189.99928686357404,
+        "f0_p90": 189.99938688951696,
+        "spl_z_mean": 71.99999869548826,
+        "spl_z_sd": 0.0033907148466452044,
+        "spl_z_p10": 71.99409739057053,
+        "spl_z_p50": 72.00196793059712,
+        "spl_z_p90": 72.00197048297719,
+        "spl_a_mean": 61.57091160992155,
+        "spl_a_sd": 0.07250919562747413,
+        "spl_a_p10": 61.49886991157918,
+        "spl_a_p50": 61.52092373847818,
+        "spl_a_p90": 61.64676836160131,
+        "level_mean": 61.57091160992155,
+        "level_sd": 0.07250919562747413,
+        "level_p10": 61.49886991157918,
+        "level_p50": 61.52092373847818,
+        "level_p90": 61.64676836160131,
+        "f0_range_st": 9.12011028059345e-06,
+        "spl_z_leq": 72.00000001872613,
+        "spl_a_leq": 61.57151691747286,
+        "level_leq": 61.57151691747286,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 20.0,
+        "max_bout_s": 20.0,
+        "clipping_pct": 0.0,
+        "cpps_db": 13.129540236077277,
+        "hnr_db": 52.72539954630007
+      },
+      "seconds_to_analyze": 1.2603838000213727,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_11025_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_11025_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_11025_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "noninteger_sample_grid_190Hz",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "6fdb5b3ff852da16926e2beb4b4ee5edeb7c6f9d2343bafff24044651df62674",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "level_steps_200Hz",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          10,
+          200,
+          60
+        ],
+        [
+          10,
+          200,
+          70
+        ],
+        [
+          10,
+          200,
+          80
+        ]
+      ],
+      "harmonics": [
+        1.0
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 30.0,
+        "dc_cycles": 6000.0,
+        "dd_m": 22.62356687440598,
+        "de_j_m3": 27343.88361003554,
+        "dr_j": 0.0034871678454846703
+      },
+      "measured_summary": {
+        "duration_s": 30.0,
+        "dt_s": 30.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 6000.043131803679,
+        "vli_kcycles": 6.000043131803679,
+        "dd_m": 22.623656395874345,
+        "de_j_m3": 27344.020094843698,
+        "dr_j": 0.0034871678553250684,
+        "dc_cycles_per_hour": 720005.1758164414,
+        "dc_cycles_per_phonation_s": 200.0014377267893,
+        "dd_m_per_hour": 2714.8387675049216,
+        "dd_m_per_phonation_s": 0.7541218798624781,
+        "de_j_m3_per_hour": 3281282.4113812437,
+        "de_j_m3_per_phonation_s": 911.46733649479,
+        "dr_j_per_hour": 0.41846014263900816,
+        "dr_j_per_phonation_s": 0.00011623892851083561,
+        "f0_mean": 200.0014377267893,
+        "f0_sd": 0.00039960452540071785,
+        "f0_p10": 200.00141461688463,
+        "f0_p50": 200.00141461705374,
+        "f0_p90": 200.00141461738826,
+        "spl_z_mean": 70.00000001477092,
+        "spl_z_sd": 8.164965824988409,
+        "spl_z_p10": 59.999999968563266,
+        "spl_z_p50": 70.00000006870194,
+        "spl_z_p90": 80.00000000704756,
+        "spl_a_mean": 59.11967614753897,
+        "spl_a_sd": 8.164989827548208,
+        "spl_a_p10": 49.11991841997856,
+        "spl_a_p50": 59.11991852011724,
+        "spl_a_p90": 69.11991845846288,
+        "level_mean": 59.11967614753897,
+        "level_sd": 8.164989827548208,
+        "level_p10": 49.11991841997856,
+        "level_p50": 59.11991852011724,
+        "level_p90": 69.11991845846288,
+        "f0_range_st": 4.359607197566309e-11,
+        "spl_z_leq": 75.68201725292525,
+        "spl_a_leq": 64.80171302309853,
+        "level_leq": 64.80171302309853,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 29.999999999999996,
+        "max_bout_s": 29.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 20.6444207002674,
+        "hnr_db": 100.15702927970945
+      },
+      "seconds_to_analyze": 1.7134368999977596,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "level_steps_200Hz",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "e78fd796de89c2ab6a0ea9a7d641e569c3fb3d69f6b5489e1cb47f95572c075f",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "pitch_steps",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          10,
+          120,
+          75
+        ],
+        [
+          10,
+          200,
+          75
+        ],
+        [
+          10,
+          300,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 30.0,
+        "dc_cycles": 6200.0,
+        "dd_m": 25.624784865024573,
+        "de_j_m3": 31840.422608365443,
+        "dr_j": 0.00298037647973883
+      },
+      "measured_summary": {
+        "duration_s": 30.0,
+        "dt_s": 29.949999999999996,
+        "dt_pct": 99.83333333333331,
+        "dc_cycles": 6189.025132026189,
+        "vli_kcycles": 6.189025132026189,
+        "dd_m": 25.57672592432518,
+        "de_j_m3": 31778.335437924652,
+        "dr_j": 0.002975409189437513,
+        "dc_cycles_per_hour": 742683.0158431426,
+        "dc_cycles_per_phonation_s": 206.64524647833687,
+        "dd_m_per_hour": 3069.207110919022,
+        "dd_m_per_phonation_s": 0.8539808321978359,
+        "de_j_m3_per_hour": 3813400.252550958,
+        "de_j_m3_per_phonation_s": 1061.0462583614242,
+        "dr_j_per_hour": 0.35704910273250157,
+        "dr_j_per_phonation_s": 9.93458827858936e-05,
+        "f0_mean": 206.6452464783369,
+        "f0_sd": 73.74030509891001,
+        "f0_p10": 120.00063227758264,
+        "f0_p50": 200.00141461705374,
+        "f0_p90": 300.0004067639065,
+        "spl_z_mean": 75.00000000559264,
+        "spl_z_sd": 1.8372614567761792e-08,
+        "spl_z_p10": 74.99999998021266,
+        "spl_z_p50": 75.00000001360898,
+        "spl_z_p90": 75.0000000229963,
+        "spl_a_mean": 63.43939291539729,
+        "spl_a_sd": 3.971565149269798,
+        "spl_a_p10": 58.2561845193856,
+        "spl_a_p50": 64.11991843162795,
+        "spl_a_p90": 67.91665078183041,
+        "level_mean": 63.43939291539729,
+        "level_sd": 3.971565149269798,
+        "level_p10": 58.2561845193856,
+        "level_p50": 64.11991843162795,
+        "level_p90": 67.91665078183041,
+        "f0_range_st": 15.863069393950282,
+        "spl_z_leq": 75.00000000559263,
+        "spl_a_leq": 64.98459721134986,
+        "level_leq": 64.98459721134986,
+        "pause_s": 0.05,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.05,
+        "bout_median_s": 14.974999999999998,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 19.427219382333483,
+        "hnr_db": 83.95827008436356
+      },
+      "seconds_to_analyze": 1.7967641000286676,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "pitch_steps",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "7fd688319921911a2c0fcd2cd1e4826991241cd1cbb2450b3775a5ac352c14ad",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "voicing_and_pauses",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          10,
+          200,
+          75
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          10,
+          200,
+          75
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "harmonics": [
+        1.0
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 4000.0,
+        "dd_m": 17.56592401209327,
+        "de_j_m3": 22206.486563842638,
+        "dr_j": 0.0019869176531592202
+      },
+      "measured_summary": {
+        "duration_s": 31.999999999999996,
+        "dt_s": 20.0,
+        "dt_pct": 62.50000000000001,
+        "dc_cycles": 4000.0301103692673,
+        "vli_kcycles": 4.000030110369267,
+        "dd_m": 17.565997025771868,
+        "de_j_m3": 22206.6033621417,
+        "dr_j": 0.001986917644106421,
+        "dc_cycles_per_hour": 450003.3874165426,
+        "dc_cycles_per_phonation_s": 200.00150551846338,
+        "dd_m_per_hour": 1976.1746653993353,
+        "dd_m_per_phonation_s": 0.8782998512885933,
+        "de_j_m3_per_hour": 2498242.878240942,
+        "de_j_m3_per_phonation_s": 1110.330168107085,
+        "dr_j_per_hour": 0.22352823496197238,
+        "dr_j_per_phonation_s": 9.934588220532105e-05,
+        "f0_mean": 200.00150551846338,
+        "f0_sd": 0.0012823225050607914,
+        "f0_p10": 200.00141461646626,
+        "f0_p50": 200.00141461705374,
+        "f0_p90": 200.00141461730556,
+        "spl_z_mean": 74.99999998021266,
+        "spl_z_sd": 0.0,
+        "spl_z_p10": 74.99999998021266,
+        "spl_z_p50": 74.99999998021266,
+        "spl_z_p90": 74.99999998021266,
+        "spl_a_mean": 64.11963809982093,
+        "spl_a_sd": 0.0039545049616727555,
+        "spl_a_p10": 64.11991843162794,
+        "spl_a_p50": 64.11991843162795,
+        "spl_a_p90": 64.11991843162798,
+        "level_mean": 64.11963809982093,
+        "level_sd": 0.0039545049616727555,
+        "level_p10": 64.11991843162794,
+        "level_p50": 64.11991843162795,
+        "level_p90": 64.11991843162798,
+        "f0_range_st": 7.264986899456533e-11,
+        "spl_z_leq": 74.99999998021266,
+        "spl_a_leq": 64.11963989257902,
+        "level_leq": 64.11963989257902,
+        "pause_s": 12.000000000000002,
+        "pause_count": 3,
+        "long_pause_count": 2,
+        "max_pause_s": 4.999999999999999,
+        "bout_median_s": 10.0,
+        "max_bout_s": 10.0,
+        "clipping_pct": 0.0,
+        "cpps_db": 20.1639348029093,
+        "hnr_db": 99.89341561288133
+      },
+      "seconds_to_analyze": 1.4741271000239067,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "voicing_and_pauses",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "3509c376ab96bdde2f8d3fc6e745f65d643f7a0776e74cfe2fef20558fef9bf5",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "partial_final_frame",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          12.123,
+          200,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 12.123,
+        "dc_cycles": 2424.6,
+        "dd_m": 10.647584839930335,
+        "de_j_m3": 13460.461830673215,
+        "dr_j": 0.0012043701354624613
+      },
+      "measured_summary": {
+        "duration_s": 12.123000000000001,
+        "dt_s": 12.05,
+        "dt_pct": 99.39783881877422,
+        "dc_cycles": 2409.982992441019,
+        "vli_kcycles": 2.409982992441019,
+        "dd_m": 10.583427958556928,
+        "de_j_m3": 13379.34213801816,
+        "dr_j": 0.0011971178805741185,
+        "dc_cycles_per_hour": 715659.3889951059,
+        "dc_cycles_per_phonation_s": 199.99858858431693,
+        "dd_m_per_hour": 3142.814538546972,
+        "dd_m_per_phonation_s": 0.8782927766437284,
+        "de_j_m3_per_hour": 3973078.5858999733,
+        "de_j_m3_per_phonation_s": 1110.3188496280632,
+        "dr_j_per_hour": 0.3554915755231235,
+        "dr_j_per_phonation_s": 9.934588220532103e-05,
+        "f0_mean": 199.9985885843169,
+        "f0_sd": 4.90324707696942e-10,
+        "f0_p10": 199.9985885838264,
+        "f0_p50": 199.99858858416204,
+        "f0_p90": 199.9985885850016,
+        "spl_z_mean": 74.99999998021265,
+        "spl_z_sd": 1.4210854715202004e-14,
+        "spl_z_p10": 74.99999998021266,
+        "spl_z_p50": 74.99999998021266,
+        "spl_z_p90": 74.99999998021266,
+        "spl_a_mean": 64.11991842800894,
+        "spl_a_sd": 5.5763438956274166e-08,
+        "spl_a_p10": 64.11991843162795,
+        "spl_a_p50": 64.11991843162797,
+        "spl_a_p90": 64.11991843162798,
+        "level_mean": 64.11991842800894,
+        "level_sd": 5.5763438956274166e-08,
+        "level_p10": 64.11991843162795,
+        "level_p50": 64.11991843162797,
+        "level_p90": 64.11991843162798,
+        "f0_range_st": 1.0173057479605069e-10,
+        "spl_z_leq": 74.99999998021266,
+        "spl_a_leq": 64.11991842800896,
+        "level_leq": 64.11991842800896,
+        "pause_s": 0.07300000000000001,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.05,
+        "bout_median_s": 12.050000000000002,
+        "max_bout_s": 12.050000000000002,
+        "clipping_pct": 0.0,
+        "cpps_db": 20.276287272781314,
+        "hnr_db": 102.71295833765498
+      },
+      "seconds_to_analyze": 0.7328611999982968,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "partial_final_frame",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "59cdd5afbb0dadc05224fb17a7108585871200ea0f1d2d43fda32f9375466271",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "harmonic_noise_snr_30dB",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          20,
+          200,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.35,
+        0.15
+      ],
+      "snr_db": 30,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 4000.0,
+        "dd_m": 17.56592401209327,
+        "de_j_m3": 22206.486563842638,
+        "dr_j": 0.0019869176531592202
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 4000.0007105715113,
+        "vli_kcycles": 4.000000710571511,
+        "dd_m": 17.56949661811015,
+        "de_j_m3": 22215.522196049445,
+        "dr_j": 0.0019891277378941094,
+        "dc_cycles_per_hour": 720000.127902872,
+        "dc_cycles_per_phonation_s": 200.00003552857555,
+        "dd_m_per_hour": 3162.5093912598268,
+        "dd_m_per_phonation_s": 0.8784748309055075,
+        "de_j_m3_per_hour": 3998793.9952889,
+        "de_j_m3_per_phonation_s": 1110.7761098024723,
+        "dr_j_per_hour": 0.3580429928209397,
+        "dr_j_per_phonation_s": 9.945638689470547e-05,
+        "f0_mean": 200.00003552857555,
+        "f0_sd": 0.024477411872790927,
+        "f0_p10": 199.97055442979195,
+        "f0_p50": 199.9980859150877,
+        "f0_p90": 200.03257265426296,
+        "spl_z_mean": 75.00481815026447,
+        "spl_z_sd": 0.009273587471286007,
+        "spl_z_p10": 74.99408714751122,
+        "spl_z_p50": 75.0039305873714,
+        "spl_z_p90": 75.01676314431765,
+        "spl_a_mean": 65.77038543537614,
+        "spl_a_sd": 0.014987894503885593,
+        "spl_a_p10": 65.75359568920751,
+        "spl_a_p50": 65.77040941384537,
+        "spl_a_p90": 65.78810282335755,
+        "level_mean": 65.77038543537614,
+        "level_sd": 0.014987894503885593,
+        "level_p10": 65.75359568920751,
+        "level_p50": 65.77040941384537,
+        "level_p90": 65.78810282335755,
+        "f0_range_st": 0.005368361168071404,
+        "spl_z_leq": 75.00482805204344,
+        "spl_a_leq": 65.77041125734527,
+        "level_leq": 65.77041125734527,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 10.105535631198027,
+        "hnr_db": 31.904152742112124
+      },
+      "seconds_to_analyze": 1.2317199000390247,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "harmonic_noise_snr_30dB",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "a173d54375f84ab598b96a1a4b9f72afb6b5221bf08f246a05171100f9376aea",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "harmonic_noise_snr_10dB",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          20,
+          200,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.35,
+        0.15
+      ],
+      "snr_db": 10,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 4000.0,
+        "dd_m": 17.56592401209327,
+        "de_j_m3": 22206.486563842638,
+        "dr_j": 0.0019869176531592202
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 4001.0253919636198,
+        "vli_kcycles": 4.00102539196362,
+        "dd_m": 17.880646293699517,
+        "de_j_m3": 23007.425249101405,
+        "dr_j": 0.002188052559510927,
+        "dc_cycles_per_hour": 720184.5705534515,
+        "dc_cycles_per_phonation_s": 200.051269598181,
+        "dd_m_per_hour": 3218.5163328659132,
+        "dd_m_per_phonation_s": 0.8940323146849758,
+        "de_j_m3_per_hour": 4141336.5448382525,
+        "de_j_m3_per_phonation_s": 1150.3712624550703,
+        "dr_j_per_hour": 0.39384946071196686,
+        "dr_j_per_phonation_s": 0.00010940262797554635,
+        "f0_mean": 200.051269598181,
+        "f0_sd": 1.2676773309651037,
+        "f0_p10": 198.4008910887321,
+        "f0_p50": 199.9877558000221,
+        "f0_p90": 201.76167566239874,
+        "spl_z_mean": 75.41790156324886,
+        "spl_z_sd": 0.08726727746107979,
+        "spl_z_p10": 75.31007629539799,
+        "spl_z_p50": 75.41016145447875,
+        "spl_z_p90": 75.53109197371269,
+        "spl_a_mean": 67.87112250433918,
+        "spl_a_sd": 0.13267943231486412,
+        "spl_a_p10": 67.70508877932936,
+        "spl_a_p50": 67.86581352137834,
+        "spl_a_p90": 68.04800651398018,
+        "level_mean": 67.87112250433918,
+        "level_sd": 0.13267943231486412,
+        "level_p10": 67.70508877932936,
+        "level_p50": 67.86581352137834,
+        "level_p90": 68.04800651398018,
+        "f0_range_st": 0.29080388691843523,
+        "spl_z_leq": 75.41877881675951,
+        "spl_a_leq": 67.87315292817206,
+        "level_leq": 67.87315292817206,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 5.426004107180881,
+        "hnr_db": 10.834688807546168
+      },
+      "seconds_to_analyze": 1.2631307000410743,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "harmonic_noise_snr_10dB",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "564614cda6638fdb5bda3f2cf76f9547916fdb5082484c0f2a8810eb2e613938",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "harmonic_noise_snr_0dB",
+      "sample_rate": 16000,
+      "segments": [
+        [
+          20,
+          200,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.35,
+        0.15
+      ],
+      "snr_db": 0,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 4000.0,
+        "dd_m": 17.56592401209327,
+        "de_j_m3": 22206.486563842638,
+        "dr_j": 0.0019869176531592202
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 19.95,
+        "dt_pct": 99.75,
+        "dc_cycles": 3899.1077777607074,
+        "vli_kcycles": 3.8991077777607073,
+        "dd_m": 19.545805129484865,
+        "de_j_m3": 27917.601473659768,
+        "dr_j": 0.003972732303276888,
+        "dc_cycles_per_hour": 701839.3999969274,
+        "dc_cycles_per_phonation_s": 195.4439988852485,
+        "dd_m_per_hour": 3518.2449233072757,
+        "dd_m_per_phonation_s": 0.9797396054879632,
+        "de_j_m3_per_hour": 5025168.265258758,
+        "de_j_m3_per_phonation_s": 1399.3785199829458,
+        "dr_j_per_hour": 0.7150918145898398,
+        "dr_j_per_phonation_s": 0.00019913445129207457,
+        "f0_mean": 195.44399888524856,
+        "f0_sd": 21.600154391751303,
+        "f0_p10": 194.55262614076685,
+        "f0_p50": 199.8853145987979,
+        "f0_p90": 204.50829359246057,
+        "spl_z_mean": 78.01599293706714,
+        "spl_z_sd": 0.18572647127456304,
+        "spl_z_p10": 77.76787896748326,
+        "spl_z_p50": 78.02058817809811,
+        "spl_z_p90": 78.25400285658873,
+        "spl_a_mean": 74.37968126076888,
+        "spl_a_sd": 0.23690659860922939,
+        "spl_a_p10": 74.06841083366967,
+        "spl_a_p50": 74.37461783195329,
+        "spl_a_p90": 74.6706285651092,
+        "level_mean": 74.37968126076888,
+        "level_sd": 0.23690659860922939,
+        "level_p10": 74.06841083366967,
+        "level_p50": 74.37461783195329,
+        "level_p90": 74.6706285651092,
+        "f0_range_st": 0.8639867603194655,
+        "spl_z_leq": 78.01996529029486,
+        "spl_a_leq": 74.38615802868293,
+        "level_leq": 74.38615802868293,
+        "pause_s": 0.05,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.05,
+        "bout_median_s": 9.975000000000001,
+        "max_bout_s": 12.250000000000002,
+        "clipping_pct": 0.0,
+        "cpps_db": 3.1863602064267575,
+        "hnr_db": 1.3969905078929126
+      },
+      "seconds_to_analyze": 1.3628026999649592,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_16000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "harmonic_noise_snr_0dB",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "82fa3dee78f271f8094488dacc34024b67d3728eb04e49f738a01c2b7ac85e77",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "A_weighted_harmonic_check",
+      "sample_rate": 48000,
+      "segments": [
+        [
+          20,
+          200,
+          75
+        ]
+      ],
+      "harmonics": [
+        1.0,
+        0.5,
+        0.25
+      ],
+      "snr_db": null,
+      "model": "average",
+      "truth": {
+        "dt_s": 20.0,
+        "dc_cycles": 4000.0,
+        "dd_m": 17.56592401209327,
+        "de_j_m3": 22206.486563842638,
+        "dr_j": 0.0019869176531592202
+      },
+      "measured_summary": {
+        "duration_s": 20.0,
+        "dt_s": 20.0,
+        "dt_pct": 100.0,
+        "dc_cycles": 4000.0440408697427,
+        "vli_kcycles": 4.000044040869743,
+        "dd_m": 17.566030817114523,
+        "de_j_m3": 22206.657428170198,
+        "dr_j": 0.0019869176470694093,
+        "dc_cycles_per_hour": 720007.9273565537,
+        "dc_cycles_per_phonation_s": 200.00220204348713,
+        "dd_m_per_hour": 3161.8855470806143,
+        "dd_m_per_phonation_s": 0.8783015408557262,
+        "de_j_m3_per_hour": 3997198.3370706355,
+        "de_j_m3_per_phonation_s": 1110.3328714085098,
+        "dr_j_per_hour": 0.35764517647249366,
+        "dr_j_per_phonation_s": 9.934588235347046e-05,
+        "f0_mean": 200.00220204348713,
+        "f0_sd": 1.290370609142484e-10,
+        "f0_p10": 200.00220204333425,
+        "f0_p50": 200.00220204345175,
+        "f0_p90": 200.00220204368574,
+        "spl_z_mean": 74.99999998668912,
+        "spl_z_sd": 4.263256414560602e-14,
+        "spl_z_p10": 74.99999998668908,
+        "spl_z_p50": 74.99999998668908,
+        "spl_z_p90": 74.99999998668908,
+        "spl_a_mean": 66.90149914375911,
+        "spl_a_sd": 0.007374546369731062,
+        "spl_a_p10": 66.90186833314242,
+        "spl_a_p50": 66.90186833314246,
+        "spl_a_p90": 66.90186833314249,
+        "level_mean": 66.90149914375911,
+        "level_sd": 0.007374546369731062,
+        "level_p10": 66.90186833314242,
+        "level_p50": 66.90186833314246,
+        "level_p90": 66.90186833314249,
+        "f0_range_st": 3.042614493320735e-11,
+        "spl_z_leq": 74.99999998668908,
+        "spl_a_leq": 66.90150533491855,
+        "level_leq": 66.90150533491855,
+        "pause_s": 0.0,
+        "pause_count": 0,
+        "long_pause_count": 0,
+        "max_pause_s": 0.0,
+        "bout_median_s": 19.999999999999996,
+        "max_bout_s": 19.999999999999996,
+        "clipping_pct": 0.0,
+        "cpps_db": 22.281841389424113,
+        "hnr_db": 86.12127670131602
+      },
+      "seconds_to_analyze": 1.177291799976956,
+      "config": {
+        "sensor": "air",
+        "channel": 0,
+        "f0_min": 40,
+        "f0_max": 1200,
+        "model": "average",
+        "calibration": [
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_60dBZ.wav",
+            "level": 60.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_75dBZ.wav",
+            "level": 75.0
+          },
+          {
+            "path": "validation/synthetic_ground_truth/signals/calibration_48000_90dBZ.wav",
+            "level": 90.0
+          }
+        ],
+        "calibration_weighting": "Z",
+        "calibration_distance_m": 0.5,
+        "target_distance_m": 0.5,
+        "gate_dbfs": -45.0,
+        "gate_spl": 20.0,
+        "window_s": 10,
+        "cpps": true,
+        "chunk_s": 30.0,
+        "subject": "SYNTHETIC_GROUND_TRUTH",
+        "task": "A_weighted_harmonic_check",
+        "device": "known numerical pressure mapping",
+        "notes": ""
+      },
+      "signal_sha256": "6e884eb6cad1ffbf07d1385859c49d8e4ef1dcdc317e59a4ceb5830a1fdccdc6",
+      "cpps_note": "No analytical CPPS/HNR ground truth is assigned. Values are characterized, not claimed validated."
+    },
+    {
+      "name": "aperiodic_white_noise",
+      "sample_rate": 16000,
+      "duration_s": 20,
+      "seed": 20261115,
+      "distribution": "Gaussian",
+      "digital_std": 0.01,
+      "true_periodic_source": false,
+      "expected_voicing_fraction": 0.0,
+      "signal": "signals/aperiodic_white_noise.wav",
+      "signal_sha256": "f075ff57fe3d1c225e00a58c8004d9e74860db30b2f741d2ccb32eaa4dd66fe6"
+    },
+    {
+      "name": "linear_chirp_100_400Hz",
+      "sample_rate": 16000,
+      "duration_s": 30.0,
+      "digital_peak_amplitude": 0.05,
+      "instantaneous_f0_hz": "100 + 10*t",
+      "phase_rad": "2*pi*(100*t + 0.5*10*t^2)",
+      "true_cycles": 7500.0,
+      "signal": "signals/linear_chirp_100_400Hz.wav",
+      "signal_sha256": "bd38703d5c695a1dbad2395bd08fe7807f56bdec6ae4e9c00245675c597e337d"
+    },
+    {
+      "name": "two_hour_stream",
+      "sample_rate": 16000,
+      "duration_s": 7200.0,
+      "frequency_hz": 180.0,
+      "digital_peak_amplitude": 0.08,
+      "block_duration_s": 10.0,
+      "blocks": 720,
+      "voiced_seconds_per_block": 4.0,
+      "nonvoiced_seconds_per_block": 6.0,
+      "true_phonation_s": 2880.0,
+      "true_cycles": 518400.0,
+      "signal": "../long_audio/synthetic_2h.flac",
+      "signal_sha256": "afbd4428be275a0cd115b13dc512b9f5b267931a0d22f2477cbd547cb8d69e40"
+    }
+  ],
+  "calibration_contract": {
+    "reference_pressure_pa": 2e-05,
+    "digital_units_per_pa": 0.05,
+    "reference_weighting": "Z",
+    "calibration_levels_db": [
+      60,
+      75,
+      90
+    ],
+    "physical_microphone_validation": false
+  }
+}

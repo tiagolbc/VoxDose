@@ -1,0 +1,20 @@
+VoxDose 2.0.2 (2026)
+
+Original MATLAB dosimetry code: Pasquale Bottalico.
+Underlying dose framework: Titze, Svec and Popolo (2003).
+These original contributions retain their authorship.
+
+VoxDose adaptation, development and modernization:
+Tiago Lima Bicalho Cruz
+Universidade Federal de Minas Gerais (UFMG), Brazil.
+The version 2.0 implementation, documented numerical corrections, interface,
+block processing, comparisons, figures, diary, storage and documentation
+are attributed to this VoxDose adaptation and development.
+
+The existing repository LICENSE has been retained unchanged. Its text sets
+non-commercial terms; older metadata describing it simply as MIT does not
+replace those terms. This notice grants no additional rights and does not
+alter original-code attribution or third-party licenses.
+
+Third-party components retain their own licenses. See package metadata
+and Qt/PySide6 distribution notices for their applicable terms.
