@@ -1,0 +1,39 @@
+{
+  "title": "VoxDose 2.0: scientific vocal dose analysis",
+  "version": "2.0.2",
+  "publication_date": "2026-11-15",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "other-nc",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Cruz, Tiago Lima Bicalho",
+      "affiliation": "Universidade Federal de Minas Gerais (UFMG), Brazil",
+      "orcid": "0000-0002-8355-5436"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Bottalico, Pasquale",
+      "type": "Other"
+    }
+  ],
+  "description": "<p>VoxDose is scientific software for vocal dose analysis, comparisons of long recordings, and descriptive self-reports of vocal effort and fatigue.</p><p><strong>Original MATLAB dosimetry code: Pasquale Bottalico.</strong> <strong>VoxDose adaptation, development and modernization: Tiago Lima Bicalho Cruz, Universidade Federal de Minas Gerais (UFMG), Brazil.</strong> Bottalico's contributor credit identifies the original code contribution, separately from the new VoxDose implementation. The dose framework is based on Titze, Svec and Popolo (2003).</p><p>Revision 2.0.2 provides a tabbed PySide6 application, English defaults and Brazilian Portuguese selection, immediate hover help, block processing, comparison of long recordings, a descriptive diary, Excel/CSV/PNG/SVG exports, and a single-file Windows executable and NSIS installer with both illustrated manuals. A native macOS builder is included, but Mac binaries have not been generated or validated.</p><p>The current regression suite contains 53 tests. Recorded Windows delivery passed three executable rounds (53 source tests and 45 application checks per round) and three NSIS install/launch/uninstall cycles. Independent synthetic ground-truth testing met 142 of 144 acceptance criteria; two F0 precision criteria at SNR 10 dB remain unmet. These computational checks do not establish clinical validity or universal vocal-fatigue thresholds.</p><p>The repository's existing non-commercial license is preserved. See the LICENSE file for the actual terms; this record's Other (Non-Commercial) category does not replace that license. Third-party authorship and licenses remain applicable.</p>",
+  "notes": "License text: https://github.com/tiagolbc/VoxDose/blob/v2.0.2/LICENSE . The archived GitHub source is the scientific software record; Windows distribution files and bilingual manuals are attached to the corresponding GitHub release. The macOS build source archive is not a compiled Mac application.",
+  "keywords": ["vocal dose", "voice science", "acoustics", "phonation", "vocal effort", "vocal fatigue", "research software", "PySide6"],
+  "related_identifiers": [
+    {
+      "identifier": "10.1044/2023_JSLHR-23-00060",
+      "scheme": "doi",
+      "relation": "references",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1044/1092-4388(2003/072)",
+      "scheme": "doi",
+      "relation": "references",
+      "resource_type": "publication-article"
+    }
+  ]
+}

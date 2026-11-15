@@ -4,10 +4,14 @@ type: software
 title: "VoxDose 2.0"
 version: 2.0.2
 date-released: 2026-11-15
+url: "https://github.com/tiagolbc/VoxDose/releases/tag/v2.0.2"
+repository-code: "https://github.com/tiagolbc/VoxDose"
+license-url: "https://github.com/tiagolbc/VoxDose/blob/v2.0.2/LICENSE"
 authors:
   - family-names: Cruz
     given-names: Tiago Lima Bicalho
     affiliation: Universidade Federal de Minas Gerais
+    orcid: "https://orcid.org/0000-0002-8355-5436"
 abstract: "Local vocal exposure analysis, long-recording comparisons and descriptive self-ratings. Dose equations adapted from Pasquale Bottalico's original MATLAB code, with version 2.0 development by Tiago Lima Bicalho Cruz."
 references:
   - type: article
